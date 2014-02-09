@@ -1,4 +1,8 @@
- <!DOCTYPE html>
+<?php
+session_start();
+?>
+
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -14,6 +18,19 @@
     <link href="starter-template.css" rel="stylesheet">
   </head>
 
+<?php
+	$service_port = $_POST["port"];   
+	$address = $_POST["ip"];
+
+echo $address;
+echo $service_port;
+
+	$_SESSION["ip"] = $address;  
+	$_SESSION["port"] = $service_port; 
+?>
+  
+  
+  
   <body>
 
 <div class="navbar navbar-default navbar-fixed-top">
@@ -28,8 +45,8 @@
                 <div class="navbar-collapse collapse navbar-responsive-collapse">
                   <ul class="nav navbar-nav">
                     <li><a href="index.html">Anasayfa</a></li>
-                    <li><a href="network.html">Network Ayarları</a></li>
                     <li><a href="hakkinda.html">Hakkında</a></li>
+                    <li><a href="network.html">Network Ayarları</a></li>
                     <li class="active"><a href="kontrol.html">Kontrol</a></li>
                     </li>
                   </ul>
