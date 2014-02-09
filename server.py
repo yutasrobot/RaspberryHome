@@ -10,8 +10,8 @@ GPIO.setmode(GPIO.BCM) 	#pin numaralarini boarddaki siralamaya gore ayarla
 GPIO.cleanup()			#onceden kalmis olan pin ayarlarini temizle
 GPIO.setup(18,GPIO.OUT)		#led 1in bagli olacagi pini cikis olarak ayarla
 
-while range(1,5):                                
+for x in range(1,5):                                
 	GPIO.output(led1,GPIO.HIGH)              #ledi yak
 	time.sleep(1)							#1sn bekle                                          
 	GPIO.output(led1,GPIO.LOW)               #ledi sondur
-	time.sleep(1)							#1sn bekle 
+	time.sleep(1)							#1sn bekle

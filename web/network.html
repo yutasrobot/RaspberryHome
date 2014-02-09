@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>KKU Elektrik Elektronik Bitirme Projesi</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/cerulean.min.css" rel="stylesheet">
+    <link href="starter-template.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+<div class="navbar navbar-default navbar-fixed-top">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">Ev Kontrol Projesi</a>
+                </div>
+                <div class="navbar-collapse collapse navbar-responsive-collapse">
+                  <ul class="nav navbar-nav">
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li class="active"><a href="network.html">Network Ayarları</a></li>
+                    <li><a href="hakkinda.html">Hakkında</a></li>
+                    <li><a href="kontrol.html">Kontrol</a></li>
+                    </li>
+                  </ul>
+                </div><!-- /.nav-collapse -->
+              </div>
+
+<form role="form" class="col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
+  <div class="form-group spacer">
+    <label>IP Adresi:</label>
+    <input type="text" class="form-control" name="ip" value="192.168.1.5" size=18 maxlength=18>
+  </div>
+  <div class="form-group">
+    <label>Port Numarası:</label>
+    <input type="text" class="form-control" name="msk" value="6879" size=18 maxlength=18>
+  </div>
+  <button type="submit" class="btn btn-primary btn-block" OnClick="submit();">Yolla</button>
+</form>
+
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
