@@ -11,6 +11,8 @@ session_start();
     <meta name="description" content="">
     <meta name="author" content="">
 
+ //at kafası
+
     <title>KKU Elektrik Elektronik Bitirme Projesi</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
